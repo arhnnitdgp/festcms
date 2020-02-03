@@ -56,44 +56,11 @@
                     <div class="container-fluid">
                         <div class="row" style="justify-content:center">
                             {% for individual in member_team %}
-                            <div class="col-auto col-lg-2 m-2 temp">
+                            <div class="col-4 col-lg-2 temp">
                                 <div class="card mx-auto mb-3 h-100">
-                                    <div class="card-body mx-auto" style="display:grid">
-                                        <svg viewBox="0 0 600 600">
-                                            <defs>
-                                                <path id="SVGID_1_"
-                                                    d="M600 300c0 165.69-134.31 300-300 300S0 465.69 0 300 134.31 0 300 0s300 134.31 300 300" />
-                                            </defs>
-                                            <clipPath id="SVGID_2_">
-                                                <use xlink:href="#SVGID_1_" overflow="hidden" />
-                                            </clipPath>
-                                            <g clip-path="url(#SVGID_2_)"></g>
-                                            <g clip-path="url(#SVGID_2_)" fill="none" stroke="#FFF"
-                                                stroke-miterlimit="10">
-                                                <circle cx="300" cy="300" r="150" stroke-width="20" />
-                                                <image width="800" height="600"
-                                                    xlink:href="{{ individual.profile_img.url }}"
-                                                    clip-path=url(#SVGID_1_) style="z-index: -1000;" />
-                                                <path d="M600 300" stroke-width="8" />
-                                                <path d="M555.58 300" stroke-width="8" />
-                                                <path d="M44.42 300" stroke-width="8" />
-                                                <path d="M300 3.09" stroke-width="8" />
-                                                <path d="M300 47.52" stroke-width="8" />
-                                                <path d="M300 553.57" stroke-width="8" />
-                                                <path d="M300 597.99" stroke-width="8" />
-                                                <path d="M574.69 300" />
-                                                <path d="M25.31 300" />
-                                                <line x1="300" y1="25.31" x2="300" y2="100" stroke-width="19" />
-                                                <line x1="300" y1="500" x2="300" y2="574.69" stroke-width="19" />
-                                                <line x1="498.23" y1="300" x2="572.92" y2="300" stroke-width="19" />
-                                                <line x1="25.31" y1="300" x2="100" y2="300" stroke-width="19" />
-                                                <line x1="300" y1="25.31" x2="300" y2="574.69" stroke-width="2" />
-                                                <line x1="25.31" y1="300" x2="574.69" y2="300" stroke-width="2" />
-                                                <g id="sniper-cross1" stroke-width="5">
-                                                </g>
-                                            </g>
-                                        </svg>
-
+                                    <div class="card-body mx-auto cross" style="display:grid">
+                                      <img src="{{ individual.profile_img.url }}"/>
+                                      <img style="position: absolute;top: 0;left: 0;" src="{%static 'img/crosshair3.png' %}">
                                         <span class="text-white">
                                             {{ individual.name }}
                                         </span>
@@ -324,6 +291,12 @@
         opacity: 0.75 !important;
     }
 
+    .cross img{
+      height: 180px;
+      width: 180px;
+      border-radius: 50%;
+    }
+
 
     @media only screen and (max-width: 767px) {
         #arhn_header {
@@ -349,6 +322,11 @@
         }
         .el .container-fluid{
             transform: translateY(-15vh);
+        }
+        .cross img{
+          height: 90px;
+          width: 90px;
+          border-radius: 50%;
         }
     }
 
