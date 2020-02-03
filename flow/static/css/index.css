@@ -37,7 +37,7 @@ h1 {
   font-size: 2em;
   text-align: center;
 }
-/* 
+/*
 @keyframes animate {
 	0%{
 		background-position: left 0 top 50px;
@@ -615,7 +615,7 @@ h1 {
   #head-txt-1, #head-txt-2 {
     display: none;
   }
-  
+
   .patron {
     top: 4vh;
     width: 65vw;
@@ -792,7 +792,7 @@ h1 {
   .div-in-wksp{
     display: inline;
   }
-  
+
   .workshop-img {
     all: unset;
     height: 18vh;
@@ -858,7 +858,7 @@ h1 {
 }
 
 /* ====================================
-Navigation 
+Navigation
 ==================================== */
 
 .overlay-navigation {
@@ -1279,7 +1279,6 @@ Animation keyframes
   transform: translateY(-50%);
   color: white;
   font-size: 2.5rem;
-  text-transform: uppercase;
 }
 
 .btn-remove {
