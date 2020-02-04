@@ -9,8 +9,8 @@ To run on your local machine :
 3. `source venv/bin/activate`
 4. `git clone https://github.com/arhnnitdgp/festcms.git`
 5. `cd festcms2`
-6. `python manage.py migrate`
-7. `cp .env.example .env` and fill the secret key and debug values in .env
+6. `cp .env.example .env` and fill the secret key and debug values in .env
+7. `python manage.py migrate`
 8. `python manage.py runserver`
 
 Its running now on `https://localhost:8000/`

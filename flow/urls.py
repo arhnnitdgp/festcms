@@ -10,4 +10,5 @@ urlpatterns = [
     path('sponsors',sponsor_view,name="sponsors"),
     path('attractions',attractions_page,name="attractions"),
     path('teams',team_page,name="teams"),
+    path('temp/<id>',temp,name="temp"),
 ]

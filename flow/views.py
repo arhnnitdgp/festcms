@@ -56,3 +56,14 @@ def team_page(request):
         members.append(TeamMember.objects.filter(team=umbrella))
     context = {'teams':umbrellas,'members':members}
     return render(request,"flow/teampage.html", context)
+
+def temp(request, id):
+    context = {}
+    try:
+        categrory = EventCategory.objects.get(groupId=id)
+        events = Events.objects.filter(eventGroup=categrory)
+        context['events'] = events
+        context['group'] = categrory
+        return render(request,'flow/temp.html',context)
+    except ObjectDoesNotExist:
+        raise Http404
