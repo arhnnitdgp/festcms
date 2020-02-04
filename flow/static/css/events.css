@@ -97,8 +97,8 @@
   }
   @media only screen and (max-width: 450px) {
     .swiper-slide {
-      width: 320px;
-      height: 320px;
+      width: 320px!important;
+      height: 320px!important;
     }
     .swiper-container {
       transform: translateY(50%) !important;
@@ -109,8 +109,8 @@
   }
   @media only screen and (max-width: 340px) {
     .swiper-slide {
-      width: 250px;
-      height: 250px;
+      width: 250px!important;
+      height: 250px!important;
     }
     .swiper-container {
       transform: translateY(55%) !important;
