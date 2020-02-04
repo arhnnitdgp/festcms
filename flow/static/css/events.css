@@ -30,8 +30,9 @@
   }
 
   .modal-header {
-    background-color: #2196f3;
-    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    background-color: #2e3037;
+    box-shadow: 0 0 10px #2e3037, 0 0 40px #2e3037, 0 0 80px #2e3037;
+    color: antiquewhite;
   }
   .modal-body {
     background-color: rgb(225, 240, 245);
@@ -54,14 +55,13 @@
 }
 
 .btn{
-  color: #2196f3;
+  color: #2e3037;
   text-decoration: none;
   /* transition: 0.2s; */
 }
 .btn:hover{
-  color: #255784;
-  background: #2196f3;
-  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  background: #2e3037;
+  box-shadow: 0 0 10px #2e3037, 0 0 10px #2e3037, 0 0 8px #2e3037;
   color: white;
 }
   @media only screen and (max-width: 1500px) {
