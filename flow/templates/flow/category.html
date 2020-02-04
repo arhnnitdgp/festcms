@@ -83,8 +83,9 @@
                                     {{ event.eventName }}</h1>
                                 <p class="about-event about-event">
                                     {{ event.description }}
+                                    {% if event.doc %}<br><a href="{{ event.doc.url }}" target="_blank"><strong>Click Here for More Info</strong></b></a> {% endif %}
                                     <br><br>
-                                    {% if event.registration_open %}<a href="{{ event.registration_link }}">Register Now !</a><br><br> {% endif %}
+                                    {% if event.registration_open %}<a href="{{ event.registration_link }}"><strong>Register Now !</strong></a><br><br> {% endif %}
 
                                     Event Details: {{ event.date_time }}<br>
                                     Venue: {{ event.venue }} <br>
