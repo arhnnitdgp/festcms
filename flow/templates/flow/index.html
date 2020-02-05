@@ -386,7 +386,7 @@
             </div>
 
             <!-- major attractions 5 -->
-            <!-- <div class="section" id="attr">
+            <div class="section" id="attr">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-xs-6">
@@ -437,7 +437,7 @@
                     </div>
 
                 </div>
-            </div> -->
+            </div>
 
             <!-- sponsors 6 -->
             <!-- <div class="section" id="sponsors">
@@ -580,7 +580,7 @@
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors: ['home', 'aboutus', 'event', 'workshops', 'accomod', 'contactus'], //'mjr_attr', 'sponsor',
+        anchors: ['home', 'aboutus', 'event', 'workshops','mjr_attr', 'accomod', 'contactus'], //'mjr_attr', 'sponsor',
         navigation: false,
         navigationPosition: 'right',
         showActiveTooltip: false,
@@ -642,3 +642,69 @@
 </script>
 
 </html>
+<style>
+    .attr-img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .attr-title {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 2.5rem;
+    }
+
+    .btn-remove {
+        background-color: rgba(0, 0, 0, 0) !important;
+        border-color: rgba(0, 0, 0, 0) !important;
+        padding: 30px !important;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .attr-img {
+            height: 120px;
+            width: 120px;
+        }
+
+        .attr-title {
+            position: relative;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        #attr .row {
+            text-align: center;
+        }
+
+        .attr-img {
+            height: 100px;
+            width: 100px;
+        }
+
+        .attr-title {
+            position: relative;
+        }
+
+        .btn-remove {
+            padding: 15px !important;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .attr-img {
+            height: 100px;
+            width: 100px;
+        }
+
+        .attr-title {
+            position: relative;
+        }
+
+        .btn-remove {
+            padding: 5px !important;
+        }
+    }
+</style>
